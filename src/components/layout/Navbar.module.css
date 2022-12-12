@@ -1,0 +1,62 @@
+.routes {
+  background-color: #302c34;
+  display: flex;
+  list-style-type: none;
+  justify-content: center;
+}
+
+.routes li {
+  padding: 15px 0;
+  margin-right: 20px;
+  transition: .5s;
+}
+
+.routes li::after {
+  content: "";
+  width: 0px;
+  height: .1rem;
+  display: block;
+  background-color: #fefe;
+  transition: 500ms;
+}
+
+.routes li:hover::after {
+  width: 100%;
+}
+
+.routes li a {
+  text-decoration: none;
+  font-size: 1.2rem;
+  color: #fefefe;
+  transition: .5s;
+}
+
+.routes li a:hover {
+  opacity: .7;
+}
+
+@media (max-width: 420px) {
+  .routes {
+    justify-content: space-around;
+  }
+
+  .routes li {
+    margin-right: 0;
+    margin: 5px;
+  }
+
+  .routes li a {
+    font-size: 1rem;
+  }
+}
+
+@media (min-width: 421px) and (max-width: 720px) {
+  .routes li {
+    margin-right: 0;
+    margin: 0 20px;
+  }
+
+  .routes li a {
+    font-size: 1.1rem;
+  }
+}
