@@ -1,17 +1,17 @@
-import format from 'date-format'
+import format from 'date-format';
 
-import styles from './Localizacao.module.css'
+import styles from './Localizacao.module.css';
 
 function Localizacao({ results, code }) {
-  const url = 'https://rastreamento.correios.com.br/static/rastreamento-internet/imgs/'
+  const url = 'https://rastreamento.correios.com.br/static/rastreamento-internet/imgs/';
 
-  const newResults = []
+  const newResults = [];
 
   Object.keys(results).forEach(result => {
-    let dtHrCriado = format.asString('dd/MM/yyyy hh:mm:ss', new Date(results[result].dtHrCriado))
+    let dtHrCriado = format.asString('dd/MM/yyyy hh:mm:ss', new Date(results[result].dtHrCriado));
 
-    newResults.push(results[result].dtHrCriadoFormatted = dtHrCriado)
-  })
+    newResults.push(results[result].dtHrCriadoFormatted = dtHrCriado);
+  });
 
   return (
     <div className={styles.container_results}>
@@ -47,4 +47,4 @@ function Localizacao({ results, code }) {
   )
 }
 
-export default Localizacao
+export default Localizacao;

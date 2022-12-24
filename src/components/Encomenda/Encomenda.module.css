@@ -81,14 +81,14 @@
 }
 
 .rastreio_container .loader .loading {
-  background-image: url('../imgs/loading.svg');
+  margin-top: 5%;
+  background-image: url('../../imgs/loading.svg');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   border-radius: 50%;
   width: 50px;
   height: 50px;
-  display: none;
 }
 
 @media (min-width: 421px) and (max-width: 720px) {
@@ -116,5 +116,11 @@
 
   .rastreio_container .form .container_form input {
     width: 80%;
+  }
+}
+
+@media (max-height: 820px) {
+  .rastreio_container {
+    height: 150vh;
   }
 }

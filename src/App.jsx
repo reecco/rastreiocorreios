@@ -1,9 +1,9 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom"
 
-import Navbar from "./components/layout/Navbar";
-import Footer from "./components/layout/Footer";
-import Encomenda from './components/Encomenda';
-import Home from './components/Home';
+import Navbar from "./components/layout/Navbar/Navbar";
+import Footer from "./components/layout/Footer/Footer";
+import Encomenda from './components/Encomenda/Encomenda';
+import Home from './components/Home/Home';
 import './App.css';
 
 function App() {

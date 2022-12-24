@@ -1,9 +1,9 @@
-import { MdOutlineVerified } from 'react-icons/md'
+import { MdOutlineVerified } from 'react-icons/md';
 
-import styles from './Home.module.css'
+import styles from './Home.module.css';
 
 function Home() {
-  document.title = 'Home - Rastreio Correios'
+  document.title = 'Home - Rastreio Correios';
 
   return (
     <div className={styles.home_container}>
@@ -16,4 +16,4 @@ function Home() {
   )
 }
 
-export default Home
+export default Home;

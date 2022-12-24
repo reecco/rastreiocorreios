@@ -1,6 +1,6 @@
-import { AiFillGithub } from 'react-icons/ai'
+import { AiFillGithub } from 'react-icons/ai';
 
-import styles from './Footer.module.css'
+import styles from './Footer.module.css';
 
 function Footer() {
   return (
@@ -22,4 +22,4 @@ function Footer() {
   )
 }
 
-export default Footer
+export default Footer;

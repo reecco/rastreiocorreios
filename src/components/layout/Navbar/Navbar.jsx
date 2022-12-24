@@ -1,12 +1,12 @@
-import { Link } from 'react-router-dom'
+import { Link } from 'react-router-dom';
 
-import styles from './Navbar.module.css'
+import styles from './Navbar.module.css';
 
 function Navbar() {
   const routes = [
     { 'name': 'Home', 'url': '/' },
     { 'name': 'Rastrear encomenda', 'url': '/rastreio' }
-  ]
+  ];
 
   return (
     <header>
@@ -26,4 +26,4 @@ function Navbar() {
   )
 }
 
-export default Navbar
+export default Navbar;
